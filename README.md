@@ -1,6 +1,6 @@
 # Recorder echo
 
-This is a project for a audio recorder with a specific frequency filter. The recorder can capture sounds from a range of frequencies defined by the user. For instance, if you set the frequency range to 20 to 50 Hz, the recorder will only pick up sounds within that range.
+This is a test task: this project performs microphone recording while simultaneously playing back on the output device. It also has a GUI interface for the start-stop command. If the stop button is pressed before 5 seconds, the program will continue recording until it reaches 5 seconds and then stop. The maximum recording duration is 60 seconds. Additionally, the audio will be saved locally to a file.
 
 ## Getting Started
 
