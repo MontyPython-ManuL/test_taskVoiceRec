@@ -1,0 +1,22 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "your_project_name"
+version = "0.1.0"
+description = "Your project description here"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.21.0"
+easygui = "^0.98.2"
+pyaudio = "^0.2.11"
+
+[tool.poetry.dev-dependencies]
+# You can specify development-only dependencies here
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

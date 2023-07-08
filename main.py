@@ -5,7 +5,6 @@ import time
 from dataclasses import dataclass, asdict
 import easygui
 import pyaudio
-
 from cli_interface import get_input_path_from_cli
 
 
@@ -76,6 +75,7 @@ class Recorder:
         while self.is_recording.is_set():
             audio_data = self._input_stream.read(self.stream_params.frames_per_buffer)
             amplified_audio_data = np.frombuffer(audio_data, dtype=np.int16) * 2
+
             self._output_stream.write(amplified_audio_data.tobytes())
             self._wav_file.writeframes(amplified_audio_data.tobytes())
 
